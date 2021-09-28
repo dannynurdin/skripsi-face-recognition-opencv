@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "starting!"
+cd "$HOME"/skripsi
+echo $pwd
+source ./skripsi/bin/activate
+echo $(python3 --version)
+gunicorn -b 127.0.0.1:8000 app:app --daemon
+echo "success"
+

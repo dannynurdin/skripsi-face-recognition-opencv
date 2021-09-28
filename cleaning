@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "deleting all image and video"
+rm ~/skripsi/video/*
+rm ~/skripsi/image/*
