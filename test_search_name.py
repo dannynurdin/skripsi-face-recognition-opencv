@@ -54,9 +54,10 @@
 #     print(datas)
 #     datas['#W'] = { 'S' : 'apaansin'}
 #     print(datas)
-from file_downloader import SearchUser, getData
+from file_downloader import SearchUser, getData, putData
 
 target = '4'
+expect = 'dc538654-c341-4a80-9a80-e8849c00b57a'
 hasil = None
 
 with open('users.txt') as f:
@@ -68,7 +69,7 @@ with open('users.txt') as f:
         else:
             hasil = 'salah'
 print(hasil)
-test = SearchUser(1)
+test = SearchUser(0)
 user = test.search()
 
 print('User: ',user)
@@ -81,3 +82,8 @@ print('User Len -f: ',len('d771d2ce-ba2a-4f32-a156-f28264cab1af'))
 dynamodb_client = getData(id = str(user.replace("\n","")))
 res = dynamodb_client.get()
 print(res['Item'])
+
+if expect == str(user.replace("\n","")):
+    record = putData(id = user.replace("\n",""),face_id='Test Face ID 007',conf="conf",location='Test Location 007')
+    record.put()
+    print('selesai')

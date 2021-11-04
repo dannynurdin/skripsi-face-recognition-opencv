@@ -28,7 +28,7 @@ def test():
 def predict():
     logging.info('halo')
     request_data = request.get_json()
-    id = None
+    ids = None
     
     if request_data:
         image = request_data['image']
@@ -36,6 +36,7 @@ def predict():
         location = request_data['location']
         username = None
         conf = None
+        TEST_DB = None
         
 
         debug_id = None
@@ -62,10 +63,10 @@ def predict():
         model = Predict(image_path)
         
         res = model.print()
-        id,c = model.predict()
-        logging.info('DATA => id from model == ', id)
-        print('DATA => id from model == ', id)
-        logging.info('success {} - {}'.format(id, c))
+        ids,c = model.predict()
+        logging.info('DATA => id from model == ', ids)
+        print('DATA => id from model == ', ids)
+        logging.info('success {} - {}'.format(ids, c))
         if c:
             disMax = 140.0
             simMax = 100
@@ -73,7 +74,7 @@ def predict():
             conf = similarity
 
         ## search user in Users.txt
-        user = SearchUser(id)
+        user = SearchUser(ids)
         userId = user.search()
 
         ## get user data from dynamodb
@@ -81,11 +82,12 @@ def predict():
         dynamodb_response = dynamodb_client.get()
 
         # add record to database test-v2
-        if expect_username == dynamodb_response['Item']['id']:
-            record = putData(id = userId.replace("\n",""),face_id=id,conf=conf,location=location)
+        if expect_username == userId.replace("\n",""):
+            record = putData(id = expect_username,face_id=ids,conf=conf,location=location)
             record.put()
+            TEST_DB = 'success'
 
-            
+           
         
         # with open('users.txt') as f:
         #     datafile = f.readlines()
@@ -143,9 +145,12 @@ def predict():
 
                 
         response = {
-            'id': id,
+            'id': ids,
             'user': dynamodb_response['Item'],
-            'location': location
+            'location': location,
+            'db': TEST_DB,
+            'user_id': userId.replace("\n",""),
+            'expect_user': expect_username
         }
         # response.headers['Content-Security-Policy'] = 'upgrade-insecure-requests'
         return response
@@ -256,10 +261,11 @@ def update():
     AttrName = {}
     AttrValue = {}
     Expression = []
+    ids = None
 
     if request_data:
         if 'id' in request_data:
-            id = request_data['id']
+            ids = request_data['id']
             
 
         if 'name' in request_data:
@@ -284,7 +290,7 @@ def update():
     
     expression = 'Set ' + ','.join([str(elem) for elem in Expression])
 
-    dynamodb_client = updateDataNew(id)
+    dynamodb_client = updateDataNew(ids)
     ress = dynamodb_client.update(AttrName,AttrValue, expression) 
 
     response = make_response({

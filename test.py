@@ -123,32 +123,32 @@ if __name__ == '__main__':
     #
     # get imread
     #
-    # imRead = getImread('/home/ubuntu/skripsi/dataset/User.3.0.jpg ')
-    # imRead.run()
+    imRead = getImread('/home/ubuntu/skripsi/dataset/User.3.0.jpg ')
+    imRead.run()
 
-    #
-    # get all filepath
-    #
-    filepath = getFilepath('/home/ubuntu/skripsi/testing_bab4/test/3')
-    onlyfiles = [f for f in os.listdir('/home/ubuntu/skripsi/testing_bab4/test/3') if os.path.isfile(os.path.join('/home/ubuntu/skripsi/testing_bab4/test/3', f))]
-    data = filepath.run()
-    table_data = []
-    head = ['No', 'Actual', 'Predict', 'Confidence', "Similarity"]
+    # #
+    # # get all filepath
+    # #
+    # filepath = getFilepath('/home/ubuntu/skripsi/testing_bab4/test/3')
+    # onlyfiles = [f for f in os.listdir('/home/ubuntu/skripsi/testing_bab4/test/3') if os.path.isfile(os.path.join('/home/ubuntu/skripsi/testing_bab4/test/3', f))]
+    # data = filepath.run()
+    # table_data = []
+    # head = ['No', 'Actual', 'Predict', 'Confidence', "Similarity"]
 
-    for index,file in enumerate(data):
-        print('===================================')
-        print(f'{index}. {file}')
-        p = Pre(file)
-        id,c,sim = p.start()
-        table_data.append([index,onlyfiles[index],id,c,sim])
-        print('===================================')
+    # for index,file in enumerate(data):
+    #     print('===================================')
+    #     print(f'{index}. {file}')
+    #     p = Pre(file)
+    #     id,c,sim = p.start()
+    #     table_data.append([index,onlyfiles[index],id,c,sim])
+    #     print('===================================')
     
-    print(tabulate(table_data, headers=head, tablefmt="grid"))
-    with open('result.csv', 'w') as f:
-        write = csv.writer(f)
-        write.writerow(head)
-        for data in table_data:
-            write.writerow(data)
+    # print(tabulate(table_data, headers=head, tablefmt="grid"))
+    # with open('result.csv', 'w') as f:
+    #     write = csv.writer(f)
+    #     write.writerow(head)
+    #     for data in table_data:
+    #         write.writerow(data)
 
     
     

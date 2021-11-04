@@ -1,5 +1,8 @@
 import boto3
 import datetime
+import logging
+
+logging.basicConfig(filename='testing.log', format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S')
 
 s3 = boto3.client('s3',aws_access_key_id='AKIA5O74KBBP4GOP6BE3',aws_secret_access_key='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')
 dynamodb= boto3.client('dynamodb',aws_access_key_id='AKIA5O74KBBP4GOP6BE3',aws_secret_access_key='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', region_name='ap-southeast-1')
@@ -31,9 +34,9 @@ class getData():
         return response
 
 class updateData():
-    def __init__(self, id, key):
-        self.id = id
-        self.key = key
+    def __init__(self, ids, key):
+        self.id = str(ids)
+        self.key = str(key)
 
     def update(self):
         response = dynamodb.update_item(
@@ -59,7 +62,7 @@ class updateData():
 
 class updateDataNew():
     def __init__(self,key):
-        self.key = key
+        self.key = str(key)
 
     def update(self, AttrName, AttrValue, Expression):
         response = dynamodb.update_item(
@@ -80,49 +83,59 @@ class putData():
     def __init__(self, id, face_id, conf, location):
         self.year = str(datetime.datetime.now().year)
         self.time = str(datetime.datetime.today().strftime('%Y-%m-%d,%H:%M:%S'))
-        self.user_id = id
-        self.face_id = face_id
-        self.confidence = conf
-        self.location = location
+        self.user_id = str(id)
+        self.face_id = str(face_id)
+        self.confidence = str(conf)
+        self.location = str(location)
 
     def put(self):
-        try:
-            print('MULAI')
-            dynamodb.put_item(
-                TableName = 'test-v2',
-                Item = {
-                    "type": {
-                        "S": self.year
-                    },
-                    "date": {
-                        "S": self.time
-                    },
-                    "location": {
-                        "S": self.location
-                    },
-                    "confidence": {
-                        "S": self.confidence
-                    },
-                    "face_id": {
-                        "S": self.face_id
-                    },
-                    "tgl": {
-                        "S": self.time.split(',')[0]
-                    },
-                    "time": {
-                        "S": self.time.split(',')[1]
-                    },
-                    "group": {
-                        "S": "employee"
-                    },
-                    "name": {
-                        "S": self.user_id
-                    }
+        # try:
+        print('MULAI')
+        logging.info('STATUS => mulai')
+        logging.info('PARAMS => year: ', self.year)
+        logging.info('PARAMS => time: ', self.time)
+        logging.info('PARAMS => user_id: ', self.user_id)
+        logging.info('PARAMS => face_id: ', self.face_id)
+        logging.info('PARAMS => confidence: ', self.confidence)
+        logging.info('PARAMS => location: ', self.location)
+        response = dynamodb.put_item(
+            TableName = 'test-v2',
+            Item = {
+                "type": {
+                    "S": self.year
                 },
-            )
-            print('SELESAI')
-        except Exception as e:
-            print('ERROR on =>', e)
+                "date": {
+                    "S": self.time
+                },
+                "location": {
+                    "S": self.location
+                },
+                "confidence": {
+                    "S": self.confidence
+                },
+                "face_id": {
+                    "S": self.face_id
+                },
+                "tgl": {
+                    "S": self.time.split(',')[0]
+                },
+                "time": {
+                    "S": self.time.split(',')[1]
+                },
+                "group": {
+                    "S": "employee"
+                },
+                "name": {
+                    "S": self.user_id
+                }
+            },
+        )
+        print('SELESAI')
+        logging.info('STATUS => selesai')
+        return response
+        # except Exception as e:
+        #     print('ERROR on =>', e)
+        #     logging.info('ERROR => ',e)
 
 class SearchUser():
     def __init__(self, id):
