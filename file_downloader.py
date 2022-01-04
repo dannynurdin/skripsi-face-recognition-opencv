@@ -22,7 +22,7 @@ class downloader():
 
 class getData():
     def __init__(self, id):
-        self.key = id
+        self.key = str(id)
     
     def get(self):
         response = dynamodb.get_item(
@@ -80,10 +80,11 @@ class updateDataNew():
         return response
 
 class putData():
-    def __init__(self, id, face_id, conf, location):
+    def __init__(self, id, name, face_id, conf, location):
         self.year = str(datetime.datetime.now().year)
-        self.time = str(datetime.datetime.today().strftime('%Y-%m-%d,%H:%M:%S'))
+        self.time = datetime.datetime.today()
         self.user_id = str(id)
+        self.name = str(name)
         self.face_id = str(face_id)
         self.confidence = str(conf)
         self.location = str(location)
@@ -95,9 +96,20 @@ class putData():
         logging.info('PARAMS => year: ', self.year)
         logging.info('PARAMS => time: ', self.time)
         logging.info('PARAMS => user_id: ', self.user_id)
+        logging.info('PARAMS => Name: ', self.name)
         logging.info('PARAMS => face_id: ', self.face_id)
         logging.info('PARAMS => confidence: ', self.confidence)
         logging.info('PARAMS => location: ', self.location)
+
+        today = datetime.datetime.today() + datetime.timedelta(hours=7)
+        times = today.strftime('%Y-%m-%d,%H:%M:%S')
+
+        status = 'Self Attendance'
+        timeLimit = 8
+
+        if today.hour >= timeLimit:
+            status = "Late"
+
         response = dynamodb.put_item(
             TableName = 'test-v2',
             Item = {
@@ -105,7 +117,7 @@ class putData():
                     "S": self.year
                 },
                 "date": {
-                    "S": self.time
+                    "S": str(times)
                 },
                 "location": {
                     "S": self.location
@@ -117,21 +129,28 @@ class putData():
                     "S": self.face_id
                 },
                 "tgl": {
-                    "S": self.time.split(',')[0]
+                    "S": times.split(',')[0]
                 },
                 "time": {
-                    "S": self.time.split(',')[1]
+                    "S": times.split(',')[1]
                 },
                 "group": {
                     "S": "employee"
                 },
-                "name": {
+                "id": {
                     "S": self.user_id
+                },
+                "name": {
+                    "S": self.name
+                },
+                "status": {
+                    "S": status
                 }
             },
         )
-        print('SELESAI')
-        logging.info('STATUS => selesai')
+        print('SELESAI : ', response)
+        
+        logging.info('STATUS => selesai: ', response)
         return response
         # except Exception as e:
         #     print('ERROR on =>', e)

@@ -83,7 +83,10 @@ def predict():
 
         # add record to database test-v2
         if expect_username == userId.replace("\n",""):
-            record = putData(id = expect_username,face_id=ids,conf=conf,location=location)
+            dynamodb_client2 = getData(id = expect_username)
+            dynamodb_response2 = dynamodb_client2.get()
+
+            record = putData(id = expect_username, name = dynamodb_response2['Item']['name']['S'],face_id=ids,conf=conf,location=location)
             record.put()
             TEST_DB = 'success'
 

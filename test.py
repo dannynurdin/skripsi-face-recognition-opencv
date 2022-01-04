@@ -1,5 +1,5 @@
 from predict import Predict
-from file_downloader import downloader, putData
+from file_downloader import downloader, putData, getData
 import recognize as re
 import uuid
 import os
@@ -123,8 +123,8 @@ if __name__ == '__main__':
     #
     # get imread
     #
-    imRead = getImread('/home/ubuntu/skripsi/dataset/User.3.0.jpg ')
-    imRead.run()
+    # imRead = getImread('/home/ubuntu/skripsi/dataset/User.3.0.jpg ')
+    # imRead.run()
 
     # #
     # # get all filepath
@@ -149,6 +149,29 @@ if __name__ == '__main__':
     #     write.writerow(head)
     #     for data in table_data:
     #         write.writerow(data)
+
+    ## Get Data from dynamoDB
+    # ids = "dc538654-c341-4a80-9a80-e8849c00b57a"
+    # dynamodb_client = getData(ids)
+    # response = dynamodb_client.get()
+    # print(type(response))
+    # print(response['Item']['name']['S'])
+    
+    
+    expect_username = 'd771d2ce-ba2a-4f32-a156-f28264cab1af'
+    ids = 1
+    conf = 65
+    location = 'wanayasa'
+
+    dynamodb_client = getData(id = expect_username)
+    dynamodb_response = dynamodb_client.get()
+    # print(dynamodb_response)
+    print(dynamodb_response['Item']['name']['S'])
+
+    record = putData(id =expect_username, name = dynamodb_response['Item']['name']['S'],face_id=ids,conf=conf,location=location)
+    rrr = record.put()
+    print(rrr)
+    
 
     
     

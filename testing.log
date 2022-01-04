@@ -410,3 +410,365 @@ Traceback (most recent call last):
     raise ParamValidationError(report=report.generate_report())
 botocore.exceptions.ParamValidationError: Parameter validation failed:
 Invalid type for parameter Key.id.S, value: None, type: <class 'NoneType'>, valid types: <class 'str'>
+2021-11-04 04:24:06 INFO     halo
+2021-11-04 04:24:06 INFO     -----------------------------
+2021-11-04 04:24:06 INFO     Predict Start
+2021-11-04 04:24:06 INFO     Recognizer start
+2021-11-04 04:24:07 INFO     Predict result: 1 with 52.648765352796666 distance
+2021-11-04 04:24:07 INFO     success 1 - 52.648765352796666
+2021-11-04 04:24:07 INFO     STATUS => mulai
+2021-11-04 04:24:07 INFO     STATUS => selesai
+2021-11-04 06:25:32 INFO     halo
+2021-11-04 06:25:32 INFO     -----------------------------
+2021-11-04 06:25:32 INFO     Predict Start
+2021-11-04 06:25:32 INFO     Recognizer start
+2021-11-04 06:25:33 INFO     Predict result: 1 with 101.61561392429448 distance
+2021-11-04 06:25:33 INFO     success 1 - 101.61561392429448
+2021-11-04 06:25:33 INFO     STATUS => mulai
+2021-11-04 06:25:33 INFO     STATUS => selesai
+2021-11-04 06:49:28 INFO     halo
+2021-11-04 06:49:28 INFO     -----------------------------
+2021-11-04 06:49:28 INFO     Predict Start
+2021-11-04 06:49:28 INFO     Recognizer start
+2021-11-04 06:49:29 INFO     Predict result: 3 with 104.25321026497681 distance
+2021-11-04 06:49:29 INFO     success 3 - 104.25321026497681
+2021-11-04 06:50:01 INFO     halo
+2021-11-04 06:50:02 INFO     -----------------------------
+2021-11-04 06:50:02 INFO     Predict Start
+2021-11-04 06:50:02 INFO     Recognizer start
+2021-11-04 06:50:02 INFO     Predict result: 1 with 99.72598960047857 distance
+2021-11-04 06:50:02 INFO     success 1 - 99.72598960047857
+2021-11-04 06:50:02 INFO     STATUS => mulai
+2021-11-04 06:50:02 INFO     STATUS => selesai
+2021-11-14 06:46:45 INFO     halo
+2021-11-14 06:46:45 INFO     -----------------------------
+2021-11-14 06:46:45 INFO     Predict Start
+2021-11-14 06:46:45 INFO     Recognizer start
+2021-11-14 06:46:45 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:46:45 INFO     success 1 - 70.64414202414198
+2021-11-14 06:46:45 INFO     STATUS => mulai
+2021-11-14 06:46:45 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 87, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 102, in put
+    timeUTC = self.time.strftime('%Y-%m-%d,%H:%M:%S')
+AttributeError: 'str' object has no attribute 'strftime'
+2021-11-14 06:49:58 INFO     halo
+2021-11-14 06:49:58 INFO     -----------------------------
+2021-11-14 06:49:58 INFO     Predict Start
+2021-11-14 06:49:58 INFO     Recognizer start
+2021-11-14 06:49:58 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:49:58 INFO     success 1 - 70.64414202414198
+2021-11-14 06:49:58 INFO     STATUS => mulai
+2021-11-14 06:49:58 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 87, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 105, in put
+    if timeUTC.hour >= timeLimit:
+AttributeError: 'str' object has no attribute 'hour'
+2021-11-14 06:54:24 INFO     halo
+2021-11-14 06:54:24 INFO     -----------------------------
+2021-11-14 06:54:24 INFO     Predict Start
+2021-11-14 06:54:24 INFO     Recognizer start
+2021-11-14 06:54:24 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:54:24 INFO     success 1 - 70.64414202414198
+2021-11-14 06:54:24 INFO     STATUS => mulai
+2021-11-14 06:54:24 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 87, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 105, in put
+    if timeUTC.hour >= timeLimit:
+AttributeError: 'str' object has no attribute 'hour'
+2021-11-14 06:54:47 INFO     halo
+2021-11-14 06:54:47 INFO     -----------------------------
+2021-11-14 06:54:47 INFO     Predict Start
+2021-11-14 06:54:47 INFO     Recognizer start
+2021-11-14 06:54:47 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:54:47 INFO     success 1 - 70.64414202414198
+2021-11-14 06:54:47 INFO     STATUS => mulai
+2021-11-14 06:54:47 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 87, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 130, in put
+    "S": timeUTC.split(',')[0]
+NameError: name 'timeUTC' is not defined
+2021-11-14 06:55:36 INFO     halo
+2021-11-14 06:55:36 INFO     -----------------------------
+2021-11-14 06:55:36 INFO     Predict Start
+2021-11-14 06:55:36 INFO     Recognizer start
+2021-11-14 06:55:36 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:55:36 INFO     success 1 - 70.64414202414198
+2021-11-14 06:55:36 INFO     STATUS => mulai
+2021-11-14 06:55:36 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 87, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 111, in put
+    response = dynamodb.put_item(
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/client.py", line 386, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/client.py", line 677, in _make_api_call
+    request_dict = self._convert_to_request_dict(
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/client.py", line 725, in _convert_to_request_dict
+    request_dict = self._serializer.serialize_to_request(
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/validate.py", line 319, in serialize_to_request
+    raise ParamValidationError(report=report.generate_report())
+botocore.exceptions.ParamValidationError: Parameter validation failed:
+Invalid type for parameter Item.date.S, value: 2021-11-14 06:55:36.560386, type: <class 'datetime.datetime'>, valid types: <class 'str'>
+2021-11-14 06:56:41 INFO     halo
+2021-11-14 06:56:41 INFO     -----------------------------
+2021-11-14 06:56:41 INFO     Predict Start
+2021-11-14 06:56:41 INFO     Recognizer start
+2021-11-14 06:56:42 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 06:56:42 INFO     success 1 - 70.64414202414198
+2021-11-14 06:56:42 INFO     STATUS => mulai
+2021-11-14 06:56:42 INFO     STATUS => selesai
+2021-11-14 07:08:07 INFO     halo
+2021-11-14 07:08:07 INFO     -----------------------------
+2021-11-14 07:08:07 INFO     Predict Start
+2021-11-14 07:08:07 INFO     Recognizer start
+2021-11-14 07:08:08 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-14 07:08:08 INFO     success 1 - 70.64414202414198
+2021-11-14 07:08:08 INFO     STATUS => mulai
+2021-11-14 07:08:08 INFO     STATUS => selesai
+2021-11-14 07:47:54 INFO     halo
+2021-11-14 07:47:54 INFO     -----------------------------
+2021-11-14 07:47:54 INFO     Predict Start
+2021-11-14 07:47:54 INFO     Recognizer start
+2021-11-14 07:47:54 INFO     Predict result: 1 with 54.77798559559972 distance
+2021-11-14 07:47:54 INFO     success 1 - 54.77798559559972
+2021-11-14 07:47:54 INFO     STATUS => mulai
+2021-11-14 07:47:54 INFO     STATUS => selesai
+2021-11-16 03:25:34 INFO     halo
+2021-11-16 03:25:34 INFO     -----------------------------
+2021-11-16 03:25:34 INFO     Predict Start
+2021-11-16 03:25:34 INFO     Recognizer start
+2021-11-16 03:25:34 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:25:34 INFO     success 1 - 70.64414202414198
+2021-11-16 03:25:34 INFO     STATUS => mulai
+2021-11-16 03:25:34 INFO     STATUS => selesai
+2021-11-16 03:30:59 INFO     halo
+2021-11-16 03:30:59 INFO     -----------------------------
+2021-11-16 03:30:59 INFO     Predict Start
+2021-11-16 03:30:59 INFO     Recognizer start
+2021-11-16 03:31:00 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:31:00 INFO     success 1 - 70.64414202414198
+2021-11-16 03:31:00 INFO     STATUS => mulai
+2021-11-16 03:31:00 INFO     STATUS => selesai
+2021-11-16 03:32:30 INFO     halo
+2021-11-16 03:32:30 INFO     -----------------------------
+2021-11-16 03:32:30 INFO     Predict Start
+2021-11-16 03:32:30 INFO     Recognizer start
+2021-11-16 03:32:31 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:32:31 INFO     success 1 - 70.64414202414198
+2021-11-16 03:32:31 INFO     STATUS => mulai
+2021-11-16 03:32:31 INFO     STATUS => selesai: 
+2021-11-16 03:37:24 INFO     halo
+2021-11-16 03:37:24 INFO     -----------------------------
+2021-11-16 03:37:24 INFO     Predict Start
+2021-11-16 03:37:24 INFO     Recognizer start
+2021-11-16 03:37:24 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:37:24 INFO     success 1 - 70.64414202414198
+2021-11-16 03:37:24 INFO     STATUS => mulai
+2021-11-16 03:37:24 INFO     STATUS => selesai: 
+2021-11-16 03:48:04 INFO     halo
+2021-11-16 03:48:05 INFO     -----------------------------
+2021-11-16 03:48:05 INFO     Predict Start
+2021-11-16 03:48:05 INFO     Recognizer start
+2021-11-16 03:48:05 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:48:05 INFO     success 1 - 70.64414202414198
+2021-11-16 03:48:05 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 90, in predict
+    record = putData(id =expect_username,face_id=ids,conf=conf,location=location)
+TypeError: __init__() missing 1 required positional argument: 'name'
+2021-11-16 03:49:33 INFO     halo
+2021-11-16 03:49:33 INFO     -----------------------------
+2021-11-16 03:49:33 INFO     Predict Start
+2021-11-16 03:49:33 INFO     Recognizer start
+2021-11-16 03:49:33 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:49:33 INFO     success 1 - 70.64414202414198
+2021-11-16 03:49:33 INFO     STATUS => mulai
+2021-11-16 03:49:33 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 90, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 141, in put
+    "S": self.id
+AttributeError: 'putData' object has no attribute 'id'
+2021-11-16 03:50:12 INFO     halo
+2021-11-16 03:50:12 INFO     -----------------------------
+2021-11-16 03:50:12 INFO     Predict Start
+2021-11-16 03:50:12 INFO     Recognizer start
+2021-11-16 03:50:13 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:50:13 INFO     success 1 - 70.64414202414198
+2021-11-16 03:50:13 INFO     STATUS => mulai
+2021-11-16 03:50:13 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 90, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 141, in put
+    "S": self.id
+AttributeError: 'putData' object has no attribute 'id'
+2021-11-16 03:50:51 INFO     halo
+2021-11-16 03:50:51 INFO     -----------------------------
+2021-11-16 03:50:51 INFO     Predict Start
+2021-11-16 03:50:51 INFO     Recognizer start
+2021-11-16 03:50:51 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:50:51 INFO     success 1 - 70.64414202414198
+2021-11-16 03:50:51 INFO     STATUS => mulai
+2021-11-16 03:50:51 ERROR    Exception on /recognize/predict [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/skripsi/app.py", line 90, in predict
+    record.put()
+  File "/home/ubuntu/skripsi/file_downloader.py", line 141, in put
+    "S": self._user_id
+AttributeError: 'putData' object has no attribute '_user_id'
+2021-11-16 03:51:06 INFO     halo
+2021-11-16 03:51:06 INFO     -----------------------------
+2021-11-16 03:51:06 INFO     Predict Start
+2021-11-16 03:51:06 INFO     Recognizer start
+2021-11-16 03:51:06 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:51:06 INFO     success 1 - 70.64414202414198
+2021-11-16 03:51:06 INFO     STATUS => mulai
+2021-11-16 03:51:06 INFO     STATUS => selesai: 
+2021-11-16 03:55:02 INFO     halo
+2021-11-16 03:55:02 INFO     -----------------------------
+2021-11-16 03:55:02 INFO     Predict Start
+2021-11-16 03:55:02 INFO     Recognizer start
+2021-11-16 03:55:02 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:55:02 INFO     success 1 - 70.64414202414198
+2021-11-16 03:55:02 INFO     STATUS => mulai
+2021-11-16 03:55:02 INFO     STATUS => selesai: 
+2021-11-16 03:56:53 INFO     halo
+2021-11-16 03:56:54 INFO     -----------------------------
+2021-11-16 03:56:54 INFO     Predict Start
+2021-11-16 03:56:54 INFO     Recognizer start
+2021-11-16 03:56:54 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:56:54 INFO     success 1 - 70.64414202414198
+2021-11-16 03:56:54 INFO     STATUS => mulai
+2021-11-16 03:56:54 INFO     STATUS => selesai: 
+2021-11-16 03:58:38 INFO     halo
+2021-11-16 03:58:38 INFO     -----------------------------
+2021-11-16 03:58:38 INFO     Predict Start
+2021-11-16 03:58:38 INFO     Recognizer start
+2021-11-16 03:58:38 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 03:58:38 INFO     success 1 - 70.64414202414198
+2021-11-16 04:00:04 INFO     halo
+2021-11-16 04:00:04 INFO     -----------------------------
+2021-11-16 04:00:04 INFO     Predict Start
+2021-11-16 04:00:04 INFO     Recognizer start
+2021-11-16 04:00:05 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 04:00:05 INFO     success 1 - 70.64414202414198
+2021-11-16 04:00:05 INFO     STATUS => mulai
+2021-11-16 04:00:05 INFO     STATUS => selesai: 
+2021-11-16 04:04:39 INFO     halo
+2021-11-16 04:04:39 INFO     -----------------------------
+2021-11-16 04:04:39 INFO     Predict Start
+2021-11-16 04:04:39 INFO     Recognizer start
+2021-11-16 04:04:40 INFO     Predict result: 1 with 70.64414202414198 distance
+2021-11-16 04:04:40 INFO     success 1 - 70.64414202414198
+2021-11-16 04:04:40 INFO     STATUS => mulai
+2021-11-16 04:04:40 INFO     STATUS => selesai: 
+2021-11-16 04:34:27 INFO     halo
+2021-11-16 04:34:27 INFO     -----------------------------
+2021-11-16 04:34:27 INFO     Predict Start
+2021-11-16 04:34:27 INFO     Recognizer start
+2021-11-16 04:34:27 INFO     Predict result: 1 with 57.289818923976156 distance
+2021-11-16 04:34:27 INFO     success 1 - 57.289818923976156
+2021-11-16 04:34:27 INFO     STATUS => mulai
+2021-11-16 04:34:27 INFO     STATUS => selesai: 

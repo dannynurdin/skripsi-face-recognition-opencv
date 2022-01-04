@@ -23,3 +23,1160 @@
 2021-11-04 02:30:46 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fdf7d87c160>
 2021-11-04 02:30:46 DEBUG    Setting dynamodb timeout as (60, 60)
 2021-11-04 02:30:46 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:13:40 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:13:40 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:13:40 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:13:40 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:13:40 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:13:40 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:13:40 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:13:40 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:13:40 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:13:40 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:13:40 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:13:40 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:13:40 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fb89a487040>
+2021-11-16 03:13:40 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:13:41 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fb89a4a43a0>
+2021-11-16 03:13:41 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fb89b9cbca0>
+2021-11-16 03:13:41 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fb89a4a4160>
+2021-11-16 03:13:41 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:13:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:13:41 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:13:41 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fb89a487040>
+2021-11-16 03:13:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:13:41 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fb89a4a4160>
+2021-11-16 03:13:41 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:13:41 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:13:41 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7fb89a423280>
+2021-11-16 03:13:41 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fb89a44b1f0>
+2021-11-16 03:13:41 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7fb89a424af0>
+2021-11-16 03:13:41 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fb8996a1760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:13:41 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fb8996a16d0>>
+2021-11-16 03:13:41 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7fb89a423160>
+2021-11-16 03:13:41 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:13:41 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T031341Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:13:41 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T031341Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+19e47dc78afc889f831b355bb09443aeebf580a2850100ff489340a8f8cd6dc9
+2021-11-16 03:13:41 DEBUG    Signature:
+5a0a2ae1f9eed6a14476629b11c297a2608c760e109878604b7aeece7c3b74e0
+2021-11-16 03:13:41 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T031341Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=5a0a2ae1f9eed6a14476629b11c297a2608c760e109878604b7aeece7c3b74e0', 'Content-Length': '95'}>
+2021-11-16 03:13:41 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:13:41 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:13:41 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:13:41 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:13:41 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'N86LFS37VSAI5B5BTTU69D1CB7VV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:13:41 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:13:41 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fb8996401f0>
+2021-11-16 03:13:41 DEBUG    No retry needed.
+2021-11-16 03:14:58 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:14:58 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:14:58 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:14:58 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:14:58 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:14:58 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:14:58 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:14:58 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:14:58 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:14:58 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:14:58 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:14:58 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:14:58 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f5b26782040>
+2021-11-16 03:14:58 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:14:58 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f5b2679f3a0>
+2021-11-16 03:14:58 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f5b27cc6ca0>
+2021-11-16 03:14:58 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f5b2679f160>
+2021-11-16 03:14:58 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:14:58 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:14:58 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:14:58 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f5b26782040>
+2021-11-16 03:14:58 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:14:58 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f5b2679f160>
+2021-11-16 03:14:58 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:14:58 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:14:58 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f5b2671e280>
+2021-11-16 03:14:58 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f5b267461f0>
+2021-11-16 03:14:58 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f5b2671faf0>
+2021-11-16 03:14:58 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f5b2599d760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:14:58 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f5b2599d6d0>>
+2021-11-16 03:14:58 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f5b2671e160>
+2021-11-16 03:14:58 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:14:58 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T031458Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:14:58 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T031458Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+61e8c84665410a589e311217869eaa89c7556abbb87cb52df3c463f191b3e291
+2021-11-16 03:14:58 DEBUG    Signature:
+60369bc0e2839071d08def1f4e89e6bd564a9b55ad228d3f14e08a2e4ed3bcde
+2021-11-16 03:14:58 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T031458Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=60369bc0e2839071d08def1f4e89e6bd564a9b55ad228d3f14e08a2e4ed3bcde', 'Content-Length': '95'}>
+2021-11-16 03:14:58 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:14:58 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:14:59 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:14:59 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:14:58 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': '8EJ691PSAUKLH1UI2E168AI2FBVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:14:59 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:14:59 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f5b2593c1f0>
+2021-11-16 03:14:59 DEBUG    No retry needed.
+2021-11-16 03:15:19 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:15:19 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:15:19 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:15:19 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:15:19 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:15:19 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:15:19 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:15:19 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:15:19 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:15:19 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:15:19 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:15:19 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:15:19 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fafbe1ca040>
+2021-11-16 03:15:19 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:15:19 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fafbe1e73a0>
+2021-11-16 03:15:19 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fafbf70eca0>
+2021-11-16 03:15:19 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fafbe1e7160>
+2021-11-16 03:15:19 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:15:19 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:15:19 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:15:19 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fafbe1ca040>
+2021-11-16 03:15:19 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:15:19 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fafbe1e7160>
+2021-11-16 03:15:19 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:15:19 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:15:19 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7fafbe166280>
+2021-11-16 03:15:19 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fafbe18e1f0>
+2021-11-16 03:15:19 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7fafbe167af0>
+2021-11-16 03:15:19 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fafbd3e4760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:15:19 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fafbd3e46d0>>
+2021-11-16 03:15:19 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7fafbe166160>
+2021-11-16 03:15:19 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:15:19 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T031519Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:15:19 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T031519Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+0a321efd9e3c66e3aae0567b0b1e43fa4f0f53ce817e821bb69d3be7a33f60bc
+2021-11-16 03:15:19 DEBUG    Signature:
+cfd1c64a04c77f4a77c451fcc5662f0514f0c8873234d42697bdc52ab9e023ee
+2021-11-16 03:15:19 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T031519Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=cfd1c64a04c77f4a77c451fcc5662f0514f0c8873234d42697bdc52ab9e023ee', 'Content-Length': '95'}>
+2021-11-16 03:15:19 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:15:19 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:15:19 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:15:19 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:15:19 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': '29QIIVQVD701U1RVBVIAE7TESFVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:15:19 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:15:19 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fafbd3831f0>
+2021-11-16 03:15:19 DEBUG    No retry needed.
+2021-11-16 03:15:37 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:15:37 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:15:37 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:15:37 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:15:37 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:15:37 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:15:37 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:15:37 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:15:37 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:15:37 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:15:37 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:15:37 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:15:37 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f6f1f4ea040>
+2021-11-16 03:15:37 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:15:37 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f6f1f5073a0>
+2021-11-16 03:15:37 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f6f20a2eca0>
+2021-11-16 03:15:37 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f6f1f507160>
+2021-11-16 03:15:37 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:15:37 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:15:37 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:15:37 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f6f1f4ea040>
+2021-11-16 03:15:37 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:15:37 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f6f1f507160>
+2021-11-16 03:15:37 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:15:37 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:15:37 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f6f1f486280>
+2021-11-16 03:15:37 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f6f1f4ae1f0>
+2021-11-16 03:15:37 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f6f1f487af0>
+2021-11-16 03:15:37 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f6f1e704760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:15:37 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f6f1e7046d0>>
+2021-11-16 03:15:37 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f6f1f486160>
+2021-11-16 03:15:37 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:15:37 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T031537Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:15:37 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T031537Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+7abcf02ad1fdf03edaff967f0a8407823639a088c48c2fc84eb6f7ea2d0c705c
+2021-11-16 03:15:37 DEBUG    Signature:
+c5e5fc9860bcb645327ff685f49c7d367e3ba010f27f5b06620c072daf175f05
+2021-11-16 03:15:37 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T031537Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=c5e5fc9860bcb645327ff685f49c7d367e3ba010f27f5b06620c072daf175f05', 'Content-Length': '95'}>
+2021-11-16 03:15:37 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:15:37 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:15:37 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:15:37 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:15:36 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'RPSOCKKFEI6HDFO0UJ1ICGKJ8VVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:15:37 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:15:37 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f6f1e6a31f0>
+2021-11-16 03:15:37 DEBUG    No retry needed.
+2021-11-16 03:16:38 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:16:38 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:16:38 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:16:38 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:16:38 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:16:38 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:16:38 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:16:38 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:16:38 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:16:38 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:16:38 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:16:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:16:38 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f536f4ad040>
+2021-11-16 03:16:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:16:38 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f536f4ca3a0>
+2021-11-16 03:16:38 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f53709f1ca0>
+2021-11-16 03:16:38 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f536f4ca160>
+2021-11-16 03:16:38 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:16:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:16:38 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:16:38 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f536f4ad040>
+2021-11-16 03:16:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:16:38 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f536f4ca160>
+2021-11-16 03:16:38 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:16:38 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:16:38 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f536f449280>
+2021-11-16 03:16:38 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f536f4711f0>
+2021-11-16 03:16:38 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f536f44aaf0>
+2021-11-16 03:16:38 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f536e6c7760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:16:38 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f536e6c76d0>>
+2021-11-16 03:16:38 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f536f449160>
+2021-11-16 03:16:38 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:16:38 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T031638Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:16:38 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T031638Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+e5f1cd329d7182948647ef1d6047e3c4b18345bb4bb9b425db104ea808e8a07d
+2021-11-16 03:16:38 DEBUG    Signature:
+80b146a5c255431af75c24024f8d884192ebed6c26d1c07b35042b43eecba2de
+2021-11-16 03:16:38 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T031638Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=80b146a5c255431af75c24024f8d884192ebed6c26d1c07b35042b43eecba2de', 'Content-Length': '95'}>
+2021-11-16 03:16:38 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:16:38 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:16:38 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:16:38 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:16:38 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'NJ0LAAIU23S26OCLO113BG6SNFVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:16:38 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:16:38 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f536e6671f0>
+2021-11-16 03:16:38 DEBUG    No retry needed.
+2021-11-16 03:36:34 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:36:34 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:36:34 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:36:34 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:36:34 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:36:34 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:36:34 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:36:34 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:36:34 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:36:34 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:36:34 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:36:34 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:36:34 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7feb9cf2d040>
+2021-11-16 03:36:34 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:36:34 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7feb9cf4b3a0>
+2021-11-16 03:36:34 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7feb9e471ca0>
+2021-11-16 03:36:34 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7feb9cf4b160>
+2021-11-16 03:36:34 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:36:34 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:36:34 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:36:34 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7feb9cf2d040>
+2021-11-16 03:36:34 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:36:34 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7feb9cf4b160>
+2021-11-16 03:36:34 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:36:34 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:37:52 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:37:52 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:37:52 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:37:52 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:37:52 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:37:52 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:37:52 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:37:52 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:37:52 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:37:52 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:37:52 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:37:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:37:52 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f91ed3f6040>
+2021-11-16 03:37:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:37:52 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f91ed4143a0>
+2021-11-16 03:37:52 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f91ee93aca0>
+2021-11-16 03:37:52 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f91ed414160>
+2021-11-16 03:37:52 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:37:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:37:52 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:37:52 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f91ed3f6040>
+2021-11-16 03:37:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:37:52 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f91ed414160>
+2021-11-16 03:37:52 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:37:52 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:37:52 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f91ed392280>
+2021-11-16 03:37:52 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f91ed3ba1f0>
+2021-11-16 03:37:52 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f91ed393af0>
+2021-11-16 03:37:52 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f91ec610760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:37:52 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f91ec6106d0>>
+2021-11-16 03:37:52 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f91ed392160>
+2021-11-16 03:37:52 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:37:52 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033752Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:37:52 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033752Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+a7b47190e182e646f4f23e62d719f6f753d78e937ed237a42f3b74e825ef58b5
+2021-11-16 03:37:52 DEBUG    Signature:
+019c540ef36634a6ea4dc9550602a61d3baf57030b8766d387e0fad81c73814e
+2021-11-16 03:37:52 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033752Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=019c540ef36634a6ea4dc9550602a61d3baf57030b8766d387e0fad81c73814e', 'Content-Length': '104'}>
+2021-11-16 03:37:52 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:37:52 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:37:52 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:37:52 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:37:52 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'IG8KB6FSPLNBKOQ6P02V61VTGFVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:37:52 DEBUG    Response body:
+b'{}'
+2021-11-16 03:37:52 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f91ec5af1f0>
+2021-11-16 03:37:52 DEBUG    No retry needed.
+2021-11-16 03:38:13 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:38:13 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:38:13 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:38:13 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:38:13 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:38:13 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:38:13 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:38:13 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:38:13 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:38:13 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:38:13 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:38:13 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:38:13 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f17f86bc040>
+2021-11-16 03:38:13 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:38:13 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f17f86da3a0>
+2021-11-16 03:38:13 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f17f9c01ca0>
+2021-11-16 03:38:13 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f17f86da160>
+2021-11-16 03:38:13 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:38:13 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:38:13 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:38:13 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f17f86bc040>
+2021-11-16 03:38:13 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:38:13 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f17f86da160>
+2021-11-16 03:38:13 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:38:13 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:38:13 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f17f8658280>
+2021-11-16 03:38:13 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f17f86801f0>
+2021-11-16 03:38:13 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f17f8659af0>
+2021-11-16 03:38:13 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f17f78d6760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:38:13 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f17f78d66d0>>
+2021-11-16 03:38:13 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f17f8658160>
+2021-11-16 03:38:13 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:38:13 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033813Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:38:13 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033813Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+7cea735ba8bd60311e255fced508c4434dc37062a8bedffdb4b6b64788c9c4b2
+2021-11-16 03:38:13 DEBUG    Signature:
+d4909b347a6afe1c1ebda063cd73690cce545f507422b3f3a8472b5dcce68766
+2021-11-16 03:38:13 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033813Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=d4909b347a6afe1c1ebda063cd73690cce545f507422b3f3a8472b5dcce68766', 'Content-Length': '104'}>
+2021-11-16 03:38:13 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:38:13 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:38:13 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:38:13 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:38:13 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'HDRT60ME0U6IE38CCUO2HMCQTNVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:38:13 DEBUG    Response body:
+b'{}'
+2021-11-16 03:38:13 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f17f78761f0>
+2021-11-16 03:38:13 DEBUG    No retry needed.
+2021-11-16 03:38:53 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:38:53 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:38:53 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:38:53 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:38:53 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:38:53 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:38:53 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:38:53 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:38:53 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:38:53 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:38:53 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:38:53 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:38:53 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7eff0e3a2040>
+2021-11-16 03:38:53 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:38:53 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7eff0e3c03a0>
+2021-11-16 03:38:53 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7eff0f8e6ca0>
+2021-11-16 03:38:53 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7eff0e3c0160>
+2021-11-16 03:38:53 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:38:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:38:54 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:38:54 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7eff0e3a2040>
+2021-11-16 03:38:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:38:54 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7eff0e3c0160>
+2021-11-16 03:38:54 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:38:54 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:38:54 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7eff0e33e280>
+2021-11-16 03:38:54 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7eff0e3661f0>
+2021-11-16 03:38:54 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7eff0e33faf0>
+2021-11-16 03:38:54 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7eff0d5bc760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:38:54 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7eff0d5bc6d0>>
+2021-11-16 03:38:54 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7eff0e33e160>
+2021-11-16 03:38:54 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:38:54 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033854Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:38:54 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033854Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+809ead7dcda20d71c36289cec9fa9eb099073ab60368a0117ffd5a8c90fbef6d
+2021-11-16 03:38:54 DEBUG    Signature:
+fcd6e91082834333246f4df6a2387d0f2422948c1f9d8cbd6c24663d94b3b1e9
+2021-11-16 03:38:54 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033854Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=fcd6e91082834333246f4df6a2387d0f2422948c1f9d8cbd6c24663d94b3b1e9', 'Content-Length': '104'}>
+2021-11-16 03:38:54 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:38:54 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:38:54 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:38:54 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:38:54 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'UIJ375T7LP5RJ62699OF6TTPCRVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:38:54 DEBUG    Response body:
+b'{}'
+2021-11-16 03:38:54 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7eff0d55b1f0>
+2021-11-16 03:38:54 DEBUG    No retry needed.
+2021-11-16 03:39:08 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:39:08 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:39:08 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:39:08 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:39:08 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:39:08 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:39:08 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:39:08 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:39:08 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:39:08 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:39:08 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:39:08 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:39:08 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f6e4cb5b040>
+2021-11-16 03:39:08 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:39:08 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f6e4cb783a0>
+2021-11-16 03:39:08 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f6e4e09fca0>
+2021-11-16 03:39:08 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f6e4cb78160>
+2021-11-16 03:39:08 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:39:08 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:39:08 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:39:08 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f6e4cb5b040>
+2021-11-16 03:39:08 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:39:08 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f6e4cb78160>
+2021-11-16 03:39:08 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:39:08 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:39:08 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f6e4caf7280>
+2021-11-16 03:39:08 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f6e4cb1f1f0>
+2021-11-16 03:39:08 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f6e4caf8af0>
+2021-11-16 03:39:08 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f6e4bd75760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:39:08 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f6e4bd756d0>>
+2021-11-16 03:39:08 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f6e4caf7160>
+2021-11-16 03:39:08 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:39:08 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033908Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:39:08 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033908Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+55ba2a6f60cc69586c15ff1f3b6d271b7c1f7e374a8dedc0a4e43434339d0054
+2021-11-16 03:39:08 DEBUG    Signature:
+bcdae454920440dd1e263eabf86cbb3c79fb3277d441680c01c56e191f19a72f
+2021-11-16 03:39:08 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033908Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=bcdae454920440dd1e263eabf86cbb3c79fb3277d441680c01c56e191f19a72f', 'Content-Length': '104'}>
+2021-11-16 03:39:08 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:39:08 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:39:08 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:39:08 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:39:08 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'SP52R3GOS7VD66HRC126C2R65RVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:39:08 DEBUG    Response body:
+b'{}'
+2021-11-16 03:39:08 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f6e4bd151f0>
+2021-11-16 03:39:08 DEBUG    No retry needed.
+2021-11-16 03:39:27 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:39:27 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:39:27 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:39:27 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:39:27 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:39:27 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:39:27 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:39:27 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:39:27 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:39:27 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:39:27 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:39:27 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:39:27 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f84412be040>
+2021-11-16 03:39:27 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:39:27 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f84412db3a0>
+2021-11-16 03:39:27 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f8442802ca0>
+2021-11-16 03:39:27 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f84412db160>
+2021-11-16 03:39:27 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:39:27 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:39:27 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:39:27 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f84412be040>
+2021-11-16 03:39:27 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:39:27 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f84412db160>
+2021-11-16 03:39:27 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:39:27 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:39:27 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f844125a280>
+2021-11-16 03:39:27 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f84412821f0>
+2021-11-16 03:39:27 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f844125baf0>
+2021-11-16 03:39:27 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f84404d8760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:39:27 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f84404d86d0>>
+2021-11-16 03:39:27 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f844125a160>
+2021-11-16 03:39:27 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:39:27 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033927Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:39:27 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033927Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+9efc0e566f24ca117174231da2e4ca943d97718f4a8730df92078e291a46dade
+2021-11-16 03:39:27 DEBUG    Signature:
+a14665ef418ed89086d89d23e5ef2a80481a1e6fb588a1281ffc4631ea5f6dc3
+2021-11-16 03:39:27 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033927Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=a14665ef418ed89086d89d23e5ef2a80481a1e6fb588a1281ffc4631ea5f6dc3', 'Content-Length': '104'}>
+2021-11-16 03:39:27 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:39:27 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:39:28 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:39:28 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:39:28 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'Q4SNM2M3BCD1FHM0EBLJQO1EGBVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:39:28 DEBUG    Response body:
+b'{}'
+2021-11-16 03:39:28 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f84404781f0>
+2021-11-16 03:39:28 DEBUG    No retry needed.
+2021-11-16 03:39:38 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:39:38 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:39:38 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:39:38 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:39:38 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:39:38 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:39:38 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:39:38 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:39:38 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:39:38 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:39:38 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:39:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:39:38 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f33908b1040>
+2021-11-16 03:39:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:39:38 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f33908ce3a0>
+2021-11-16 03:39:38 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f3391df5ca0>
+2021-11-16 03:39:38 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f33908ce160>
+2021-11-16 03:39:38 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:39:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:39:38 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:39:38 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f33908b1040>
+2021-11-16 03:39:38 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:39:38 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f33908ce160>
+2021-11-16 03:39:38 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:39:38 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:39:38 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f339084d280>
+2021-11-16 03:39:38 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f33908751f0>
+2021-11-16 03:39:38 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f339084eaf0>
+2021-11-16 03:39:38 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f338facb760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:39:38 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f338facb6d0>>
+2021-11-16 03:39:38 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f339084d160>
+2021-11-16 03:39:38 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:39:38 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033938Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:39:38 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033938Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+5a889e0caca6d4f1588fb23a0321e40a093df3956bdbfb0a8b33bc243953d022
+2021-11-16 03:39:38 DEBUG    Signature:
+4b5e208eb1fa4894d743d8d5fa1a5cfa511e8dbc01e8912ae03a762e44628576
+2021-11-16 03:39:38 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033938Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=4b5e208eb1fa4894d743d8d5fa1a5cfa511e8dbc01e8912ae03a762e44628576', 'Content-Length': '104'}>
+2021-11-16 03:39:38 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:39:38 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:39:38 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:39:38 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:39:38 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': '3SVP9NGTTCHND8BRJBSEL0H0LRVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:39:38 DEBUG    Response body:
+b'{}'
+2021-11-16 03:39:38 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f338fa6b1f0>
+2021-11-16 03:39:38 DEBUG    No retry needed.
+2021-11-16 03:39:54 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:39:54 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:39:54 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:39:54 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:39:54 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:39:54 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:39:54 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:39:54 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:39:54 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:39:54 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:39:54 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:39:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:39:54 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fcb6a9fa040>
+2021-11-16 03:39:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:39:54 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fcb6aa183a0>
+2021-11-16 03:39:54 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fcb6bf3eca0>
+2021-11-16 03:39:54 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fcb6aa18160>
+2021-11-16 03:39:54 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:39:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:39:54 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:39:54 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fcb6a9fa040>
+2021-11-16 03:39:54 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:39:54 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fcb6aa18160>
+2021-11-16 03:39:54 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:39:54 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:39:54 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7fcb6a996280>
+2021-11-16 03:39:54 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fcb6a9be1f0>
+2021-11-16 03:39:54 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7fcb6a997af0>
+2021-11-16 03:39:54 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fcb69c14760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:39:54 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fcb69c146d0>>
+2021-11-16 03:39:54 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7fcb6a996160>
+2021-11-16 03:39:54 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:39:54 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T033954Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:39:54 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T033954Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+d988588f991f96f89f79b645a867c6af40512c9c6b81d75316a6de821a9e397b
+2021-11-16 03:39:54 DEBUG    Signature:
+b0afade97ba9f8d1c348631f6e92618a0583186ceb2a6338c1833294fe007a30
+2021-11-16 03:39:54 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T033954Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=b0afade97ba9f8d1c348631f6e92618a0583186ceb2a6338c1833294fe007a30', 'Content-Length': '104'}>
+2021-11-16 03:39:54 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:39:55 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:39:55 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:39:55 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:39:54 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': '9JUV4250NG3G4ONAE5J5DNEJPRVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:39:55 DEBUG    Response body:
+b'{}'
+2021-11-16 03:39:55 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fcb69bb41f0>
+2021-11-16 03:39:55 DEBUG    No retry needed.
+2021-11-16 03:40:28 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:40:28 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:40:28 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:40:28 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:40:28 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:40:28 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:40:28 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:40:28 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:40:28 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:40:28 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:40:28 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:40:28 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:40:28 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f46a4a65040>
+2021-11-16 03:40:28 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:40:28 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f46a4a833a0>
+2021-11-16 03:40:28 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f46a5fa9ca0>
+2021-11-16 03:40:28 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f46a4a83160>
+2021-11-16 03:40:28 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:40:28 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:40:28 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:40:28 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f46a4a65040>
+2021-11-16 03:40:28 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:40:28 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f46a4a83160>
+2021-11-16 03:40:28 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:40:28 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:40:28 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f46a4a01280>
+2021-11-16 03:40:28 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f46a4a291f0>
+2021-11-16 03:40:28 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f46a4a02af0>
+2021-11-16 03:40:28 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": ".807296\\td771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f46a3c7f760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:40:28 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f46a3c7f6d0>>
+2021-11-16 03:40:28 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f46a4a01160>
+2021-11-16 03:40:28 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:40:28 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034028Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+dd5c8f71ec17a9cb0f203367e2329e0487442fa0b321cc972aa38bf822822261
+2021-11-16 03:40:28 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034028Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+1de2a3af18bff22b6d8fa137d922530ece5c88c86584655524d756fd4d500d59
+2021-11-16 03:40:28 DEBUG    Signature:
+8640c4afa62d3a69c9b0f0eddb97875ed7cd2ba0061fab831bdb7b8e269104b8
+2021-11-16 03:40:28 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034028Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=8640c4afa62d3a69c9b0f0eddb97875ed7cd2ba0061fab831bdb7b8e269104b8', 'Content-Length': '104'}>
+2021-11-16 03:40:28 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:40:28 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:40:28 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:40:28 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:40:28 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': '2DPHH5QB2S1GJND13N1V6DUHDNVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:40:28 DEBUG    Response body:
+b'{}'
+2021-11-16 03:40:28 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f46a3c1f1f0>
+2021-11-16 03:40:28 DEBUG    No retry needed.
+2021-11-16 03:40:45 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:40:45 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:40:45 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:40:45 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:40:45 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:40:45 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:40:45 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:40:45 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:40:45 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:40:45 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:40:45 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:40:45 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:40:45 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f0538bd9040>
+2021-11-16 03:40:45 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:40:45 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f0538bf63a0>
+2021-11-16 03:40:45 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f053a11dca0>
+2021-11-16 03:40:45 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f0538bf6160>
+2021-11-16 03:40:45 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:40:45 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:40:45 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:40:45 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f0538bd9040>
+2021-11-16 03:40:45 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:40:45 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f0538bf6160>
+2021-11-16 03:40:45 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:40:45 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:40:45 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f0538b75280>
+2021-11-16 03:40:45 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f0538b9d1f0>
+2021-11-16 03:40:45 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f0538b76af0>
+2021-11-16 03:40:45 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "dc538654-c341-4a80-9a80-e8849c00b57a"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f0537df3730>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:40:45 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f0537df36a0>>
+2021-11-16 03:40:45 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f0538b75160>
+2021-11-16 03:40:45 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:40:45 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034045Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+3d5a499d0a84571bb3ec3907edcd12ea02daf8362fb4cb1f6aa674b45d72308f
+2021-11-16 03:40:45 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034045Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+ced58312e6ca3f868661e07dc7f564a5b72a2be3dc6097bf799629b1cbaa5fe0
+2021-11-16 03:40:45 DEBUG    Signature:
+dd5f27040179ae5a4159c614d86ff5760fd0fefa10e44e1bcd818e8b79497e6b
+2021-11-16 03:40:45 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034045Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=dd5f27040179ae5a4159c614d86ff5760fd0fefa10e44e1bcd818e8b79497e6b', 'Content-Length': '95'}>
+2021-11-16 03:40:45 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:40:45 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:40:45 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 368
+2021-11-16 03:40:45 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:40:45 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '368', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'NKCD60A7N0FV50252FFMUP2907VV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3920216095'}
+2021-11-16 03:40:45 DEBUG    Response body:
+b'{"Item":{"__typename":{"S":"User"},"completed":{"BOOL":false},"created_at":{"S":"2021-09-27T12:46:41.868Z"},"edited_at":{"S":"2021-09-27T12:46:41.868Z"},"phone_number":{"S":"123123"},"face_id":{"S":"-"},"address":{"S":"Wanayasa"},"email":{"S":"dannyfachrul+farrel@gmail.com"},"id":{"S":"dc538654-c341-4a80-9a80-e8849c00b57a"},"picture":{"S":""},"name":{"S":"farrel"}}}'
+2021-11-16 03:40:45 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f0537d931c0>
+2021-11-16 03:40:45 DEBUG    No retry needed.
+2021-11-16 03:41:10 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:41:10 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:41:10 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:41:10 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:41:10 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:41:10 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:41:10 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:41:10 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:41:10 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:41:10 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:41:10 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:41:10 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:41:10 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f64dcd06040>
+2021-11-16 03:41:10 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:41:10 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f64dcd243a0>
+2021-11-16 03:41:10 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f64de24aca0>
+2021-11-16 03:41:10 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f64dcd24160>
+2021-11-16 03:41:10 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:41:10 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:41:10 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:41:10 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f64dcd06040>
+2021-11-16 03:41:10 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:41:10 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f64dcd24160>
+2021-11-16 03:41:10 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:41:10 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:41:10 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f64dcca2280>
+2021-11-16 03:41:10 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f64dccca1f0>
+2021-11-16 03:41:10 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f64dcca3af0>
+2021-11-16 03:41:10 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f64dbf20760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:41:10 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f64dbf206d0>>
+2021-11-16 03:41:10 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f64dcca2160>
+2021-11-16 03:41:10 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:41:10 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034110Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+43e1dc3c128eb6c27fe4fa530ecbf94b23465cdc665182d4e2da377eb6d59122
+2021-11-16 03:41:10 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034110Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+22c06d6eddafabdb23b5c35f728a3ccd0454ea1ee8f5d56eb3811f6f9623f1c1
+2021-11-16 03:41:10 DEBUG    Signature:
+6b79151f77b9036653cf48a3a01ee7576d49c72a7716886e2cbf356b881882a1
+2021-11-16 03:41:10 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034110Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=6b79151f77b9036653cf48a3a01ee7576d49c72a7716886e2cbf356b881882a1', 'Content-Length': '95'}>
+2021-11-16 03:41:10 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:41:10 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:41:10 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 455
+2021-11-16 03:41:10 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:41:10 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '455', 'Connection': 'keep-alive', 'x-amzn-RequestId': '27FENJSI28JV5PT5VNREOS25ANVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3530748494'}
+2021-11-16 03:41:10 DEBUG    Response body:
+b'{"Item":{"complete":{"BOOL":true},"edited_at":{"S":"2021-07-28T01:33:09.974Z"},"nip":{"S":"14517408"},"phone_number":{"S":"08996379200"},"face_id":{"S":"067f33de-3300-4874-8adf-32c0e8947012"},"address":{"S":"Jl.Jndrl Sudirman Ds Wanayasa"},"id":{"S":"d771d2ce-ba2a-4f32-a156-f28264cab1af"},"picture":{"S":"test/1627435972835_708259.JPG"},"name":{"S":"Danny Fachrul Aliansyah Nurdin"},"video":{"S":"public/video/6dcc39cf-2a40-4191-a05f-b1a363c4a2b4.mp4"}}}'
+2021-11-16 03:41:10 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f64dbec11f0>
+2021-11-16 03:41:10 DEBUG    No retry needed.
+2021-11-16 03:41:41 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:41:41 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:41:41 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:41:41 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:41:41 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:41:41 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:41:41 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:41:41 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:41:41 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:41:41 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:41:41 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:41:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:41:41 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fdb41813040>
+2021-11-16 03:41:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:41:41 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fdb418303a0>
+2021-11-16 03:41:41 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fdb42d59ca0>
+2021-11-16 03:41:41 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fdb41830160>
+2021-11-16 03:41:41 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:41:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:41:41 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:41:41 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fdb41813040>
+2021-11-16 03:41:41 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:41:41 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fdb41830160>
+2021-11-16 03:41:41 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:41:41 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:41:41 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7fdb417af280>
+2021-11-16 03:41:41 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fdb417d71f0>
+2021-11-16 03:41:41 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7fdb417b0af0>
+2021-11-16 03:41:41 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fdb40a2d760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:41:41 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fdb40a2d6d0>>
+2021-11-16 03:41:41 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7fdb417af160>
+2021-11-16 03:41:41 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:41:41 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034141Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+43e1dc3c128eb6c27fe4fa530ecbf94b23465cdc665182d4e2da377eb6d59122
+2021-11-16 03:41:41 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034141Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+e7372e97a73f5a2f6852979042c8afe74fd615055d6fd9ac822d2205ed60c22c
+2021-11-16 03:41:41 DEBUG    Signature:
+e0eb8d324c95515a701871315999a15e6537e24f71130ab18decc998ccdb13af
+2021-11-16 03:41:41 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034141Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=e0eb8d324c95515a701871315999a15e6537e24f71130ab18decc998ccdb13af', 'Content-Length': '95'}>
+2021-11-16 03:41:41 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:41:41 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:41:41 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 455
+2021-11-16 03:41:41 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:41:41 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '455', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'C8AJTI14F6AD8D88FUA964SVSVVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3530748494'}
+2021-11-16 03:41:41 DEBUG    Response body:
+b'{"Item":{"complete":{"BOOL":true},"edited_at":{"S":"2021-07-28T01:33:09.974Z"},"nip":{"S":"14517408"},"phone_number":{"S":"08996379200"},"face_id":{"S":"067f33de-3300-4874-8adf-32c0e8947012"},"address":{"S":"Jl.Jndrl Sudirman Ds Wanayasa"},"id":{"S":"d771d2ce-ba2a-4f32-a156-f28264cab1af"},"picture":{"S":"test/1627435972835_708259.JPG"},"name":{"S":"Danny Fachrul Aliansyah Nurdin"},"video":{"S":"public/video/6dcc39cf-2a40-4191-a05f-b1a363c4a2b4.mp4"}}}'
+2021-11-16 03:41:41 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fdb409cc1f0>
+2021-11-16 03:41:41 DEBUG    No retry needed.
+2021-11-16 03:41:52 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:41:52 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:41:52 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:41:52 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:41:52 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:41:52 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:41:52 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:41:52 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:41:52 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:41:52 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:41:52 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:41:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:41:52 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f193f891040>
+2021-11-16 03:41:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:41:52 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f193f8ae3a0>
+2021-11-16 03:41:52 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f1940dd6ca0>
+2021-11-16 03:41:52 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f193f8ae160>
+2021-11-16 03:41:52 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:41:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:41:52 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:41:52 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f193f891040>
+2021-11-16 03:41:52 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:41:52 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7f193f8ae160>
+2021-11-16 03:41:52 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:41:52 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:41:52 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7f193f82d280>
+2021-11-16 03:41:52 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f193f8551f0>
+2021-11-16 03:41:52 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7f193f82eaf0>
+2021-11-16 03:41:52 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f193eaab760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:41:52 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f193eaab6d0>>
+2021-11-16 03:41:52 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7f193f82d160>
+2021-11-16 03:41:52 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:41:52 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034152Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+43e1dc3c128eb6c27fe4fa530ecbf94b23465cdc665182d4e2da377eb6d59122
+2021-11-16 03:41:52 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034152Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+f00a930f616ef790ace8336b030fb9fde45e2b8b49faf0beedb828839f908835
+2021-11-16 03:41:52 DEBUG    Signature:
+a86113ac07ef8ef125c242bcb1e18d2d6a0c2312b3f932a868a098ccb679518a
+2021-11-16 03:41:52 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034152Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=a86113ac07ef8ef125c242bcb1e18d2d6a0c2312b3f932a868a098ccb679518a', 'Content-Length': '95'}>
+2021-11-16 03:41:52 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:41:52 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:41:52 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 455
+2021-11-16 03:41:52 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:41:52 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '455', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'FLJI6OQHUVVLDFKB2MOVPUGO4VVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3530748494'}
+2021-11-16 03:41:52 DEBUG    Response body:
+b'{"Item":{"complete":{"BOOL":true},"edited_at":{"S":"2021-07-28T01:33:09.974Z"},"nip":{"S":"14517408"},"phone_number":{"S":"08996379200"},"face_id":{"S":"067f33de-3300-4874-8adf-32c0e8947012"},"address":{"S":"Jl.Jndrl Sudirman Ds Wanayasa"},"id":{"S":"d771d2ce-ba2a-4f32-a156-f28264cab1af"},"picture":{"S":"test/1627435972835_708259.JPG"},"name":{"S":"Danny Fachrul Aliansyah Nurdin"},"video":{"S":"public/video/6dcc39cf-2a40-4191-a05f-b1a363c4a2b4.mp4"}}}'
+2021-11-16 03:41:52 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f193ea4b1f0>
+2021-11-16 03:41:52 DEBUG    No retry needed.
+2021-11-16 03:41:52 INFO     STATUS => mulai
+2021-11-16 03:41:52 DEBUG    Event before-parameter-build.dynamodb.PutItem: calling handler <function generate_idempotent_uuid at 0x7f193f82d280>
+2021-11-16 03:41:52 DEBUG    Event before-parameter-build.dynamodb.PutItem: calling handler <function block_endpoint_discovery_required_operations at 0x7f193f8551f0>
+2021-11-16 03:41:52 DEBUG    Event before-call.dynamodb.PutItem: calling handler <function inject_api_version_header_if_needed at 0x7f193f82eaf0>
+2021-11-16 03:41:52 DEBUG    Making request for OperationModel(name=PutItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.PutItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "test-v2", "Item": {"type": {"S": "2021"}, "date": {"S": "2021-11-16,10:41:52"}, "location": {"S": "wanayasa"}, "confidence": {"S": "65"}, "face_id": {"S": "1"}, "tgl": {"S": "2021-11-16"}, "time": {"S": "10:41:52"}, "group": {"S": "employee"}, "name": {"S": "Danny Fachrul Aliansyah Nurdin"}, "id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}, "status": {"S": "Late"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7f193eaab760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:41:52 DEBUG    Event request-created.dynamodb.PutItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f193eaab6d0>>
+2021-11-16 03:41:52 DEBUG    Event choose-signer.dynamodb.PutItem: calling handler <function set_operation_specific_signer at 0x7f193f82d160>
+2021-11-16 03:41:52 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:41:52 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034152Z
+x-amz-target:DynamoDB_20120810.PutItem
+
+content-type;host;x-amz-date;x-amz-target
+db729e999fd9c7aeb0caa395ecab2571197b4e2324200f97f09bed82e96b8d28
+2021-11-16 03:41:52 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034152Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+b2aa08c4ffa2c8228ef1928fa42b6de093aaa4bc719bdb87db666f7b999bb617
+2021-11-16 03:41:52 DEBUG    Signature:
+902e6467e1c5f518add33256b37504bdb5cc361eddf152a182cc0ab91b6d8f69
+2021-11-16 03:41:52 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.PutItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034152Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=902e6467e1c5f518add33256b37504bdb5cc361eddf152a182cc0ab91b6d8f69', 'Content-Length': '386'}>
+2021-11-16 03:41:52 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:41:52 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:41:52 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:41:52 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': '4A2JSF2FEHG22TPNTT14AU5S77VV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:41:52 DEBUG    Response body:
+b'{}'
+2021-11-16 03:41:52 DEBUG    Event needs-retry.dynamodb.PutItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7f193ea4b1f0>
+2021-11-16 03:41:52 DEBUG    No retry needed.
+2021-11-16 03:41:52 INFO     STATUS => selesai: 
+2021-11-16 03:43:55 DEBUG    Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2021-11-16 03:43:55 DEBUG    Changing event name from before-call.apigateway to before-call.api-gateway
+2021-11-16 03:43:55 DEBUG    Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2021-11-16 03:43:55 DEBUG    Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2021-11-16 03:43:55 DEBUG    Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2021-11-16 03:43:55 DEBUG    Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2021-11-16 03:43:55 DEBUG    Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2021-11-16 03:43:55 DEBUG    Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2021-11-16 03:43:55 DEBUG    Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2021-11-16 03:43:55 DEBUG    Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2021-11-16 03:43:55 DEBUG    Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2021-11-16 03:43:55 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/endpoints.json
+2021-11-16 03:43:55 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fed71dd2040>
+2021-11-16 03:43:55 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/s3/2006-03-01/service-2.json
+2021-11-16 03:43:55 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fed71def3a0>
+2021-11-16 03:43:55 DEBUG    Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fed73317ca0>
+2021-11-16 03:43:55 DEBUG    Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fed71def160>
+2021-11-16 03:43:55 DEBUG    Setting s3 timeout as (60, 60)
+2021-11-16 03:43:55 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/_retry.json
+2021-11-16 03:43:55 DEBUG    Registering retry handlers for service: s3
+2021-11-16 03:43:55 DEBUG    Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fed71dd2040>
+2021-11-16 03:43:55 DEBUG    Loading JSON file: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/botocore/data/dynamodb/2012-08-10/service-2.json
+2021-11-16 03:43:55 DEBUG    Event creating-client-class.dynamodb: calling handler <function add_generate_presigned_url at 0x7fed71def160>
+2021-11-16 03:43:55 DEBUG    Setting dynamodb timeout as (60, 60)
+2021-11-16 03:43:55 DEBUG    Registering retry handlers for service: dynamodb
+2021-11-16 03:43:55 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function generate_idempotent_uuid at 0x7fed71d6e280>
+2021-11-16 03:43:55 DEBUG    Event before-parameter-build.dynamodb.GetItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fed71d961f0>
+2021-11-16 03:43:55 DEBUG    Event before-call.dynamodb.GetItem: calling handler <function inject_api_version_header_if_needed at 0x7fed71d6faf0>
+2021-11-16 03:43:55 DEBUG    Making request for OperationModel(name=GetItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.GetItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "faceApp-UserPool", "Key": {"id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fed70fec760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:43:55 DEBUG    Event request-created.dynamodb.GetItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fed70fec6d0>>
+2021-11-16 03:43:55 DEBUG    Event choose-signer.dynamodb.GetItem: calling handler <function set_operation_specific_signer at 0x7fed71d6e160>
+2021-11-16 03:43:55 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:43:55 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034355Z
+x-amz-target:DynamoDB_20120810.GetItem
+
+content-type;host;x-amz-date;x-amz-target
+43e1dc3c128eb6c27fe4fa530ecbf94b23465cdc665182d4e2da377eb6d59122
+2021-11-16 03:43:55 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034355Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+380b4cda05bdd3c11497435104d4acbe4c29a315477c393fe578cf9e7c0477ad
+2021-11-16 03:43:55 DEBUG    Signature:
+7ab4c67790c919a3bdb8f73238b70cffc3fbd47d3568ab7629207da3c1f4fc8e
+2021-11-16 03:43:55 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.GetItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034355Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=7ab4c67790c919a3bdb8f73238b70cffc3fbd47d3568ab7629207da3c1f4fc8e', 'Content-Length': '95'}>
+2021-11-16 03:43:55 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:43:55 DEBUG    Starting new HTTPS connection (1): dynamodb.ap-southeast-1.amazonaws.com:443
+2021-11-16 03:43:55 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 455
+2021-11-16 03:43:55 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:43:55 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '455', 'Connection': 'keep-alive', 'x-amzn-RequestId': '9ODQ41TJPVVMK50R60QP4M1MRJVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3530748494'}
+2021-11-16 03:43:55 DEBUG    Response body:
+b'{"Item":{"complete":{"BOOL":true},"edited_at":{"S":"2021-07-28T01:33:09.974Z"},"nip":{"S":"14517408"},"phone_number":{"S":"08996379200"},"face_id":{"S":"067f33de-3300-4874-8adf-32c0e8947012"},"address":{"S":"Jl.Jndrl Sudirman Ds Wanayasa"},"id":{"S":"d771d2ce-ba2a-4f32-a156-f28264cab1af"},"picture":{"S":"test/1627435972835_708259.JPG"},"name":{"S":"Danny Fachrul Aliansyah Nurdin"},"video":{"S":"public/video/6dcc39cf-2a40-4191-a05f-b1a363c4a2b4.mp4"}}}'
+2021-11-16 03:43:55 DEBUG    Event needs-retry.dynamodb.GetItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fed70f8c1f0>
+2021-11-16 03:43:55 DEBUG    No retry needed.
+2021-11-16 03:43:55 INFO     STATUS => mulai
+2021-11-16 03:43:55 DEBUG    Event before-parameter-build.dynamodb.PutItem: calling handler <function generate_idempotent_uuid at 0x7fed71d6e280>
+2021-11-16 03:43:55 DEBUG    Event before-parameter-build.dynamodb.PutItem: calling handler <function block_endpoint_discovery_required_operations at 0x7fed71d961f0>
+2021-11-16 03:43:55 DEBUG    Event before-call.dynamodb.PutItem: calling handler <function inject_api_version_header_if_needed at 0x7fed71d6faf0>
+2021-11-16 03:43:55 DEBUG    Making request for OperationModel(name=PutItem) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'DynamoDB_20120810.PutItem', 'Content-Type': 'application/x-amz-json-1.0', 'User-Agent': 'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93'}, 'body': b'{"TableName": "test-v2", "Item": {"type": {"S": "2021"}, "date": {"S": "2021-11-16,10:43:55"}, "location": {"S": "wanayasa"}, "confidence": {"S": "65"}, "face_id": {"S": "1"}, "tgl": {"S": "2021-11-16"}, "time": {"S": "10:43:55"}, "group": {"S": "employee"}, "name": {"S": "Danny Fachrul Aliansyah Nurdin"}, "id": {"S": "d771d2ce-ba2a-4f32-a156-f28264cab1af"}, "status": {"S": "Late"}}}', 'url': 'https://dynamodb.ap-southeast-1.amazonaws.com/', 'context': {'client_region': 'ap-southeast-1', 'client_config': <botocore.config.Config object at 0x7fed70fec760>, 'has_streaming_input': False, 'auth_type': None}}
+2021-11-16 03:43:55 DEBUG    Event request-created.dynamodb.PutItem: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fed70fec6d0>>
+2021-11-16 03:43:55 DEBUG    Event choose-signer.dynamodb.PutItem: calling handler <function set_operation_specific_signer at 0x7fed71d6e160>
+2021-11-16 03:43:55 DEBUG    Calculating signature using v4 auth.
+2021-11-16 03:43:55 DEBUG    CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.0
+host:dynamodb.ap-southeast-1.amazonaws.com
+x-amz-date:20211116T034355Z
+x-amz-target:DynamoDB_20120810.PutItem
+
+content-type;host;x-amz-date;x-amz-target
+33695a1f29d676601578dc10ac84e069a435ecfefe8456076448418afdbeec01
+2021-11-16 03:43:55 DEBUG    StringToSign:
+AWS4-HMAC-SHA256
+20211116T034355Z
+20211116/ap-southeast-1/dynamodb/aws4_request
+bb498fd93118daba2e75f2f846597e8ba6da7f1af9825440fe5a855871dc3c9f
+2021-11-16 03:43:55 DEBUG    Signature:
+e403a9767de177816607d2e7a64ac7700757b638ce074e0024739162148d7cbe
+2021-11-16 03:43:55 DEBUG    Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://dynamodb.ap-southeast-1.amazonaws.com/, headers={'X-Amz-Target': b'DynamoDB_20120810.PutItem', 'Content-Type': b'application/x-amz-json-1.0', 'User-Agent': b'Boto3/1.17.93 Python/3.8.0 Linux/5.4.0-1037-aws Botocore/1.20.93', 'X-Amz-Date': b'20211116T034355Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIA5O74KBBP4GOP6BE3/20211116/ap-southeast-1/dynamodb/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=e403a9767de177816607d2e7a64ac7700757b638ce074e0024739162148d7cbe', 'Content-Length': '386'}>
+2021-11-16 03:43:55 DEBUG    Certificate path: /home/ubuntu/skripsi/skripsi/lib/python3.8/site-packages/certifi/cacert.pem
+2021-11-16 03:43:55 DEBUG    https://dynamodb.ap-southeast-1.amazonaws.com:443 "POST / HTTP/1.1" 200 2
+2021-11-16 03:43:55 DEBUG    Response headers: {'Server': 'Server', 'Date': 'Tue, 16 Nov 2021 03:43:55 GMT', 'Content-Type': 'application/x-amz-json-1.0', 'Content-Length': '2', 'Connection': 'keep-alive', 'x-amzn-RequestId': 'OHVL5EU7CNU3UQOMH4RTN6IKFRVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}
+2021-11-16 03:43:55 DEBUG    Response body:
+b'{}'
+2021-11-16 03:43:55 DEBUG    Event needs-retry.dynamodb.PutItem: calling handler <botocore.retryhandler.RetryHandler object at 0x7fed70f8c1f0>
+2021-11-16 03:43:55 DEBUG    No retry needed.
+2021-11-16 03:43:55 INFO     STATUS => selesai: 
