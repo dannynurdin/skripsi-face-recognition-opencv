@@ -4,8 +4,8 @@ import logging
 
 logging.basicConfig(filename='testing.log', format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S')
 
-s3 = boto3.client('s3',aws_access_key_id='AKIA5O74KBBP4GOP6BE3',aws_secret_access_key='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')
-dynamodb= boto3.client('dynamodb',aws_access_key_id='AKIA5O74KBBP4GOP6BE3',aws_secret_access_key='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', region_name='ap-southeast-1')
+s3 = boto3.client('s3',aws_access_key_id='',aws_secret_access_key='')
+dynamodb= boto3.client('dynamodb',aws_access_key_id='',aws_secret_access_key='', region_name='ap-southeast-1')
 
 class downloader():
 
